@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>dougunduzi</title>
+</head>
+<body>
+
+<span>
+</span>
+
+<script>
+
+    const div = document.createElement('div')
+    div.innerHTML = '豆棍杜子'
+    div.style.fontSize = '20px'
+    console.log(div)
+
+    const span = document.querySelector('span')
+    span.appendChild(div)
+
+    const h1 = document.createElement('h1')
+    h1.innerHTML = 'Good morning!'
+    h1.style.backgroundColor = "blue"
+    span.insertBefore(h1,div)
+
+    const h1_Clone = h1.cloneNode(true)
+    span.appendChild(h1_Clone)
+
+    span.removeChild(div)
+</script>
+</body>
+</html>
